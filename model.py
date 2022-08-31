@@ -19,4 +19,4 @@ def get_model():
         X=df[feature_columns], treatment=df[treatment_column], y=df[outcome_column]
     )
     tau = r_learner.models_tau[1]
-    return tau
+    return tau, df, feature_columns
