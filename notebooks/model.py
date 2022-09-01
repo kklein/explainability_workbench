@@ -20,5 +20,3 @@ def get_model():
     )
     tau = r_learner.models_tau[1]
     return tau, df, feature_columns
-
-get_model()

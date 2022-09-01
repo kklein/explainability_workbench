@@ -14,4 +14,4 @@ $ jupyter notebook
 
 ## Methodological summaries
 
-* [LIME]()
+* [LIME](https://github.com/kklein/explainability_workbench/blob/main/summaries/lime.md)
