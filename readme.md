@@ -15,3 +15,4 @@ $ jupyter notebook
 ## Methodological summaries
 
 * [LIME](https://github.com/kklein/explainability_workbench/blob/main/summaries/lime.md)
+* [SHAP](https://github.com/kklein/explainability_workbench/blob/main/summaries/shap.md)
