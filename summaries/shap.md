@@ -1,5 +1,6 @@
 # SHAP
 Paper #1: https://arxiv.org/pdf/1705.07874.pdf
+
 Paper #2 (tailored to trees): https://www.nature.com/articles/s42256-019-0138-9.epdf?shared_access_token=RCYPTVkiECUmc0CccSMgXtRgN0jAjWel9jnR3ZoTv0O81kV8DqPb2VXSseRmof0Pl8YSOZy4FHz5vMc3xsxcX6uT10EzEoWo7B-nZQAHJJvBYhQJTT1LnJmpsa48nlgUWrMkThFrEIvZstjQ7Xdc5g%3D%3D
 
 SHAP is distinct from Shapley.
@@ -37,7 +38,7 @@ Akin to the formalism introduced by LIME, the authors suggest the following:
   * A mapping function $h_x$ translates the simplified inputs to the inputs: $h_x(x') = x$ and $h_x(z') \approx z'$ if $z' \approx x$
   * The relation between $f$ and $g$ can be thought of as follows: $f(x) = g(x')$ where $h_x(x') = x$
 
-Within that formalism the authors suggest a restriction on the possible explanations. They argue that this restriction has implicitly been adopted by all major prior work as well:
+With the help of these definitions, the authors suggest a restriction on the set of possible explanations. They argue that this restriction has implicitly been adopted by all major prior work as well:
 
 $$ g(z') = \phi_0 + \sum_{i=1}^M z_i' \phi_i $$
 
@@ -79,7 +80,7 @@ On an intuitive level this conditional expectation can be approximated by comput
 
 ### Runtime
 
-While KernelSHAP is said to have asymptotic runtime complexity of $\Oh(TLD^M)$, TreeExplainer is said to be bound by $\Oh(TLD^2)$ when applied to decision trees, where
+While KernelSHAP is said to have asymptotic runtime complexity of $\mathcal{O}(TLD^M)$, TreeExplainer is said to be bound by $\mathcal{O}(TLD^2)$ when applied to decision trees, where
 * $T$ represents the number of trees
 * $L$ represents the maximal number of leaves
 * $D$ represents the maximal depth
